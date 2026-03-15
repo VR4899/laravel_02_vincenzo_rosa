@@ -1,0 +1,73 @@
+
+
+body{
+    background-image: url(https://www.arteworld.it/wp-content/themes/yootheme/cache/49/La-nascita-di-Venere-Botticelli-49a26caf.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+}
+
+
+/* Fonts */
+
+.text-custom {
+    font-family: "Cinzel", serif;
+}
+
+
+/* Background */
+
+.bg-background-nav {
+    background-color: rgba(255, 255, 255, 0); 
+    transition: background-color 0.3s ease;    
+}
+
+.bg-background-nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);      
+}
+.bg-p-custom{
+    background-color: rgba(0, 121, 140, 0.763);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+/* title custom per vari punti e generico*/
+.title-custom{
+    background-color: aliceblue;
+
+}
+
+
+/* Card */
+
+.card-custom {
+    height: 500px;
+    filter: brightness(50%);
+    transition: 0.3s; 
+    
+}
+.border-card-custom{
+  border: 2px solid black;
+
+}
+/* card hover */
+.card-custom:hover {
+    filter: brightness(100%); 
+}
+
+/* section */
+
+.section-custom{
+    
+    background-color: rgba(255, 255, 255, 0.902);
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 2px solid black;
+    
+}
+
+
+
