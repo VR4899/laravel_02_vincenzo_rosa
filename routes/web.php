@@ -1,28 +1,32 @@
 <?php
-// USE
 
-use App\Http\Controllers\ArticleController;
-use App\Http\Controllers\HomepageController;
-use App\Http\Controllers\PublicController;
-use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\ArticleController;
 
+// -----------------------------
+// HOMEPAGE
+// -----------------------------
+Route::get('/', [PageController::class, 'homepage'])->name('homepage');
 
+// -----------------------------
+// ABOUT US
+// -----------------------------
+Route::get('/about-us', [PageController::class, 'aboutUs'])->name('about.us');
 
-// ROUTE
+// -----------------------------
+// SERVIZI
+// -----------------------------
+Route::get('/service', [PageController::class, 'service'])->name('service');
 
+// -----------------------------
+// MOSTRI
+// -----------------------------
+Route::get('/mostri', [PageController::class, 'mostri'])->name('mostri');
+Route::get('/mostri/{id}', [PageController::class, 'mostro'])->name('mostro');
 
-Route::get('/', [HomepageController::class, 'homepage'])->name('homepage');
-
-Route::get('/about-us', [PublicController::class, 'aboutUs'])->name('about.us');
-
-Route::get('/service', [ServiceController::class,'service'])->name('service');
-
+// -----------------------------
+// ARTICOLI
+// -----------------------------
 Route::get('/article', [ArticleController::class, 'article'])->name('article');
-
-Route::get('/show-mostri/{id}', [PublicController::class, 'showMostro'])->name('show.mostro');
-
 Route::get('/show-articolo/{id}', [ArticleController::class, 'showArticolo'])->name('showArticolo');
-
-
-
